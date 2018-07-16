@@ -1,0 +1,14 @@
+<p>
+  pet-new works!
+</p>
+{{ pet | json}}
+
+<form (submit)='addPet()'>
+  <p>Name: <input type="text" name="name" [(ngModel)] = 'pet.name' id=""></p>
+  <p>Type: <input type="type" name="type" [(ngModel)] = 'type.type' value='Dog' id="">Type <input type="type" [(ngModel)] = 'pet.type' value='Dog' id=""></p>
+  <input type="submit" value="Add Deer">
+</form>
+
+<div *ngIf='errors'>
+  <p>Form has errors</p>
+</div>

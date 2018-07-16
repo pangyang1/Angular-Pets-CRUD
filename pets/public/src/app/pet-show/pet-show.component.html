@@ -1,0 +1,10 @@
+<table *ngIf='pet'>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td><a [routerLink]="['/pet', pet.pet._id, 'edit']">Edit</a></td>
+    <td>{{ pet.pte.type }}</td>
+  </tr>
+</table>
